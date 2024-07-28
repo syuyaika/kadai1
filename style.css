@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+
+header{
+  position: relative;
+  background-color: #fff;
+  display: grid;
+  height: 70px;
+  width: 100%;
+  
+}
+
+a {
+  text-decoration:none; 
+}
+
+
+
+.logo-img {
+  display: block;
+  height: 20px;
+  width: auto;
+
+}
+
+.header-logo-img:hover {
+  opacity: 0.8;
+}
+.header-logo-img {
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+
+.header-container {
+  display: flex;
+  justify-content:space-between;
+  margin: 0 10px 0 36px;
+  max-width: 100%;
+  position:relative
+}
+.header-container>:last-child {
+  display: inline-flex;
+}
+
+.header-navHamburger {
+  display: none;
+}
+
+
+.headernav {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+}
+.headerli {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerli:hover {
+  opacity: 0.8;
+}
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+  margin: 0;
+  padding: 0;
+}
+
+
+.headerli {
+  display: block;
+  margin-right: 40px;
+  
+}
+
+.headerli span:first-child {
+  font-family: "Lato", sans-serif;
+font-size: 11px;
+line-height: 14.4px;
+}
+
+.headerli span:last-child{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.headerli_link >span {
+  display: block;
+font-weight: 600;
+text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header-last-item{
+  align-items: center;
+  background-color: #F79214;
+  border: none;
+  border-radius: 38px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  width: 77%;
+  font-size: 11px;
+  height: 40px;
+  padding-right: 0px;
+  padding: 0 20px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.main-img {
+  position: relative;
+  height: 739px;
+}
+
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.firstview {
+  position: absolute;
+  z-index: -1;
+}
+.top-left {
+
+  left: -70px;
+
+}
+.right-bottom {
+  right: 0;
+  bottom: 70px;
+}
+.middle {
+  top: 85px;
+  left: -70px;
+}
+
+.main-visual {
+  top: -70px;
+  right: 0%;
+  width: 775px;
+}
+.whole-img {
+  display: none;
+}
+
+.main-container {    
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 220px;
+
+}
+
+.main-content {
+  position: relative;
+  width: fit-content;
+}
+
+.main-title {
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 63px;
+  margin-bottom: 16px;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.noone {
+  position: absolute;
+  top: -105px;
+  right: -150px;
+}
+
+.contact {
+  align-items: center;
+  background-color: #F79214;
+  border: none;
+  border-radius: 38px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 64px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+  margin-left: 0px;
+}
+.contact:hover {
+  opacity: 0.8;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+body {
+  color: #333;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+      max-width: 100%;
+      margin: 0px 16px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .HeaderNavHamburger {
+      height: 12px;
+      width: 18px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .header-navHamburger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 17px;
+      margin: auto;
+      z-index: 100;
+      margin-right: 25px;
+  }
+}
+.header-navHamburger-line:first-child {
+  top: 0;
+}
+.header-navHamburger-line:last-child {
+  top: 100%;
+}
+.header-navHamburger-line {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #a2a2a4;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top .2s,transform .2s,opacity .3s;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  .header-common {
+      position: fixed !important;
+  }
+}
+
+.header-common {
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+      height: 48px;
+      padding: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+      background-color: #fff;
+      z-index: 10;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+      position: fixed;
+      z-index: 10;
+  }
+  }
+@media screen and (max-width: 1080px) {
+    .headerli {
+         display:none
+    }
+    }
+
+@media screen and (max-width: 1080px) {
+      main {
+          padding-top: 60px;
+      }
+      }
+@media screen and (max-width: 1080px) {
+        .main-container { 
+            max-width: none;   
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+        }   
+    
+@media screen and (max-width: 767px) {
+          main {
+              padding-top: 70px;
+          }   
+          }
+
+
+
+@media screen and (max-width: 767px) {
+            .main-img {
+                height: fit-content;
+            }
+            }
+/* @media screen and (max-width: 767px) {
+              .firstview {
+                  height: 102px;
+                  width: 102px;
+                  top: -20px;
+                  right: -85px;
+              }
+              }
+               */
+@media screen and (max-width: 767px){
+           .main-container {
+                    padding-top: 0;
+                    padding-bottom: 20px; 
+                }
+                .whole-img {
+                    display: block;
+                    margin-bottom: 7px;
+                    width: 100%;
+                }
+                .main-title {
+                    font-size: 22px;
+                    line-height: 36px;
+                    position: relative;
+                    width: fit-content;
+                }
+                }
+
+@media screen and (max-width: 767px) {
+                  .firstview {
+                      display: none;
+                  }
+              }
+           
+@media screen and (max-width: 767px) {
+                  .noone {
+                      height: 102px;
+                      width: 102px;
+                      top: -20px;
+                      right: -85px;
+                  }
+              }
+
+@media screen and (max-width: 320px) {
+  .main-container {    
+  padding-left: 5px;
+}
+}
+
